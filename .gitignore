@@ -1,0 +1,4 @@
+*.zip
+.openclaw*
+.DS_Store
+Thumbs.db

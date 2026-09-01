@@ -1,0 +1,24 @@
+Options -Indexes -MultiViews
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Redirect legacy public PHP URLs to their clean equivalents.
+  RewriteCond %{THE_REQUEST} \s/+index\.php(?:[?\s]) [NC]
+  RewriteRule ^index\.php$ / [R=301,L]
+
+  RewriteCond %{THE_REQUEST} \s/+(gallery|testing)\.php(?:[?\s]) [NC]
+  RewriteRule ^(gallery|testing)\.php$ /$1 [R=301,L,NE]
+
+  # Let existing assets and directories pass through unchanged.
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Internally execute PHP while keeping extensions out of the URL.
+  RewriteRule ^$ index.php [L]
+  RewriteRule ^index/?$ index.php [L,QSA]
+  RewriteRule ^gallery/?$ gallery.php [L,QSA]
+  RewriteRule ^testing/?$ testing.php [L,QSA]
+</IfModule>
