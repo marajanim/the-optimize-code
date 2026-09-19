@@ -32,7 +32,7 @@ Convert The Optimize Code theme to use Elementor Free custom widgets for page se
 - `header.php`: Dynamic header via `template-parts/header-dynamic.php` supporting native Custom Logo, WordPress `primary` menu, and Theme Settings CTA/ticker.
 - `footer.php`: Dynamic footer via `template-parts/footer-dynamic.php` supporting native menus (`footer_explore`, `footer_services`, `footer_legal`), Theme Settings social links, contact email, and legal notice.
 - `inc/theme-setup.php`: Cleaned up to eliminate activation-time mutations; provides standard theme supports and menu registrations.
-- `inc/migration.php`: Nonce-guarded, capability-protected, idempotent migration utility with dry-run mode and JSON template export.
+- `inc/migration.php`: Nonce-guarded, capability-protected, idempotent migration utility with dry-run mode, JSON template export, and Prebuilt Elementor Section Library (16 prebuilt sections + 3 full pages with 1-click import into Elementor).
 - `js/config.js`: Removed (unreferenced and obsolete).
 
 ## Structure-preservation rules
@@ -66,6 +66,7 @@ Convert The Optimize Code theme to use Elementor Free custom widgets for page se
 | 17 | Saved templates & migration utility | hard-coded templates | `inc/migration.php` (dry-run, draft generator, template export) | Complete |
 | 18 | Legacy cleanup & hardening | all files | Obsolete `js/config.js` removed, `README.txt` updated | Complete |
 | 19 | Final acceptance & documentation | Section 23 of requirements | `ADMIN-GUIDE.md` & acceptance matrix | Complete |
+| 20 | Prebuilt Section Library (1-Click Import) | `inc/migration.php` | Elementor "My Templates" (`elementor_library`) | Complete |
 
 ## Visual QA widths
 
