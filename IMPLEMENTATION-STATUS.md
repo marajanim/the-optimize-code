@@ -147,4 +147,9 @@ At every section gate, test light/dark themes, reduced motion, keyboard focus, l
 - 2026-09-20: Fix CTA section visibility in `class-toc-cta-newsletter.php` and `css/dynamic.css`:
   - Removed erroneous `reveal` CSS classes from `.cta__copy` and `.cta__form-wrap` container divs which had permanently kept them at `opacity: 0`.
   - Added visibility fallback in `css/dynamic.css` to guarantee `.cta__copy` and `.cta__form-wrap` are always visible.
+- 2026-09-20: Prebuilt Elementor Section Library (1-Click Import):
+  - Added catalog of 16 individual prebuilt section templates and 3 full-page layouts in `inc/migration.php`.
+  - Implemented auto-sync and manual sync to register templates in `elementor_library` (`post_type => 'elementor_library'`, `elementor_library_type => 'section'|'page'`).
+  - Available inside Elementor editor on any new page via "Add Template" (folder icon) -> "My Templates" -> 1-click "Insert".
+  - Updated `ADMIN-GUIDE.md` Section 6 with step-by-step 1-click import instructions.
 

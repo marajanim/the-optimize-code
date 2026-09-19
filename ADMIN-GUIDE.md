@@ -137,15 +137,42 @@ In standard WordPress, the homepage is initially set to show latest posts, meani
 
 ---
 
-## 6. Creating a New Page with Templates
+## 6. Creating a New Page with Prebuilt Section Templates (1-Click Import)
 
-1. Go to **Pages > Add New**.
-2. Set the Page Template to **Elementor Full Width** in the right Page Attributes panel.
-3. Click **Edit with Elementor**.
-4. Drag any TOC widgets onto the canvas to construct your custom layout.
-5. Publish when ready.
+You can import any prebuilt section (or full page) directly into any new or existing page with 1 click:
 
----
+1. Go to **Pages > Add New**. Title your page (e.g. `About`, `Services`, `Community`).
+2. In the right sidebar under **Page Attributes**, set **Template** to **Elementor Full Width**.
+3. Click **Publish** (or Save Draft), then click **Edit with Elementor**.
+4. In the Elementor canvas area, click the **Folder icon** (**"Add Template"** next to the `+` button).
+5. In the modal that opens, switch to the **"My Templates"** tab.
+6. You will see the complete catalog of prebuilt theme templates:
+   - `[TOC] 01 - Hero Section`
+   - `[TOC] 02 - Continuous Ticker Section`
+   - `[TOC] 03 - Featured Podcast Section`
+   - `[TOC] 04 - Feature Cards (Receipts) Section`
+   - `[TOC] 05 - Blueprint Story Section`
+   - `[TOC] 06 - Process Steps Section`
+   - `[TOC] 07 - Education Grid Section`
+   - `[TOC] 08 - Newsletter & Contact CTA Section`
+   - `[TOC] 09 - Section Header (Split Layout)`
+   - `[TOC] 10 - Section Header (Stacked Layout)`
+   - `[TOC] 11 - Testing Hero Section`
+   - `[TOC] 12 - Testing Pathways Section`
+   - `[TOC] 13 - Notice & Medical Disclaimer Section`
+   - `[TOC] 14 - PGx Request Section`
+   - `[TOC] 15 - Gallery Hero Section`
+   - `[TOC] 16 - Gallery Wall Section`
+   - `[TOC Page] Full Home Page`
+   - `[TOC Page] Full Testing Page`
+   - `[TOC Page] Full Gallery Page`
+7. Click the green **"Insert"** button next to any section you want.
+8. The section will be instantly imported onto your canvas, perfectly styled with all theme styles, animations, and responsive settings intact.
+9. You can import as many sections as you want, reorder them, duplicate them, and customize all text and images in the left Elementor panel!
+
+> [!TIP]
+> **Template Syncing**: If you ever want to re-sync or reset the prebuilt templates, visit **Tools > TOC Migration** in WP Admin and click **Sync Prebuilt Templates to Elementor Library**.
+
 
 ## 7. Migration & Rollback Tools
 
