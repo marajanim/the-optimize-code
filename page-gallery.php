@@ -8,6 +8,16 @@
 
 get_header();
 
+if (toc_is_elementor_page()) {
+    ?>
+    <main id=primary class=toc-elementor-content>
+      <?php toc_render_full_width_content(); ?>
+    </main>
+    <?php
+    get_footer();
+    return;
+}
+
 $toc_gallery_images = [
     ['WhatsApp Image 2026-09-01 at 19.19.04.jpeg', 'The Optimize Code gallery portrait'],
     ['WhatsApp Image 2026-09-01 at 19.19.54.jpeg', 'The Optimize Code event moment'],
@@ -40,4 +50,3 @@ $toc_gallery_images = [
 </main>
 <?php
 get_footer();
-

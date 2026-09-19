@@ -7,6 +7,16 @@
  */
 
 get_header();
+
+if (toc_is_elementor_page()) {
+    ?>
+    <main id=primary class=toc-elementor-content>
+      <?php toc_render_full_width_content(); ?>
+    </main>
+    <?php
+    get_footer();
+    return;
+}
 ?>
 <main>
   <section class="testing-hero">
@@ -24,4 +34,3 @@ get_header();
 </main>
 <?php
 get_footer();
-

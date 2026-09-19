@@ -9,6 +9,9 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+require get_template_directory() . '/template-parts/footer-dynamic.php';
+return;
+
 $toc_is_home    = is_front_page();
 $toc_is_testing = is_page('testing');
 $toc_is_gallery = is_page('gallery');
@@ -56,4 +59,3 @@ $toc_is_gallery = is_page('gallery');
 <?php wp_footer(); ?>
 </body>
 </html>
-
