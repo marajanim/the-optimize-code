@@ -1,0 +1,79 @@
+/*
+Theme Name: The Optimize Code
+Theme URI: https://theoptimizecode.com/
+Author: The Optimize Code
+Description: A custom WordPress theme for The Optimize Code, preserving the original responsive website design and interactions.
+Version: 1.0.1
+Requires at least: 6.0
+Tested up to: 6.8
+Requires PHP: 7.4
+Text Domain: the-optimize-code
+*/
+
+/* WordPress-only fallback templates. The original site styles remain in /css. */
+.wp-page-content {
+  min-height: 70vh;
+  padding: clamp(140px, 16vw, 190px) clamp(20px, 6vw, 96px) clamp(72px, 10vw, 130px);
+  background: var(--ink);
+  color: var(--sky);
+}
+
+.wp-page-content__inner {
+  width: min(880px, 100%);
+  margin-inline: auto;
+}
+
+.wp-page-content h1 {
+  margin: 0 0 32px;
+  font-family: 'Anton SC', 'Anton', sans-serif;
+  font-size: clamp(64px, 10vw, 140px);
+  font-weight: 400;
+  line-height: .86;
+  letter-spacing: -.035em;
+}
+
+.wp-page-content .entry-content {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.wp-page-content .entry-content > * + * {
+  margin-top: 1.4em;
+}
+
+.wp-page-content a {
+  color: var(--lime);
+}
+
+.alignwide { max-width: 1200px; }
+.alignfull { width: 100%; max-width: none; }
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Keep the fixed navigation fully below WordPress's logged-in admin toolbar. */
+body.admin-bar .nav,
+body.admin-bar .scroll-progress {
+  top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+  body.admin-bar .nav,
+  body.admin-bar .scroll-progress {
+    top: 46px;
+  }
+
+  body.admin-bar .mobile-menu {
+    top: 112px;
+    height: calc(100dvh - 112px);
+  }
+}
+
